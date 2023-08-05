@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+}
+:root {
+    --mainColor: #009AD8;
+}
+
+.item a {
+    text-decoration: none;
+    color: white;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+#home {
+    background-image: url(../images/banner.png);
+    /* background-position: center center;
+    background-size: cover; */
+    background-repeat: no-repeat;
+}
+
+
+.form-control::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #ccc;
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #ccc;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #ccc;
+}
+
+
+
+.icon {
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+    background-color: #2D303D;
+    transition: all 1s;
+}
+
+.icon i{
+    color: var(--mainColor);
+    transition: all 1s;
+}
+body,nav{
+    background-color: #1E202B;
+}
+
+.icon:hover{
+    background-color: var(--mainColor);
+}
+.icon:hover i{
+    color: white;
+}
+
+button.btn{
+    background-color: var(--mainColor);
+    border: 2px transparent solid;
+    border-radius: 50px;
+    transition: all 1s;
+    
+}
+
+button.btn:hover{
+    background-color: transparent;
+    color: white;
+    border: 2px var(--mainColor) solid;
+    border-radius: 50px;
+}
+
+.form-control:focus{
+    box-shadow: none;
+}
+.nav-item{
+    border: none;
+}
+
+.nav-link{
+    color: white;
+    margin: 15px;
+    transition: all 1S;
+    border: 2px transparent solid;
+  
+    border-radius: 50px;
+}
+
+.link-active {
+    border: 2px var(--mainColor) solid;
+    color: var(--mainColor);
+    border-radius: 50px;
+}
+.nav-link:hover{
+    color: var(--mainColor);
+    border: 2px var(--mainColor) solid;
+
+}
+
+#myBar{
+    height: 0px; 
+    overflow: hidden;
+    background-color:#1E202B ;
+}
+
