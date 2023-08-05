@@ -2,7 +2,7 @@ let nameInput = document.getElementById("nameInput");
 let newName ="";
 async function getData(text = "cairo") {
   let myReqName = await fetch(
-    `http://api.weatherapi.com/v1/search.json?key=59b81daaa3614315b95183529230408&q=${text}`
+    `https://api.weatherapi.com/v1/search.json?key=59b81daaa3614315b95183529230408&q=${text}`
   );
   let data = await myReqName.json();
   if (data.length == 0) {
@@ -11,7 +11,7 @@ async function getData(text = "cairo") {
       newName = text;
     }
     myReqName = await fetch(
-      `http://api.weatherapi.com/v1/search.json?key=59b81daaa3614315b95183529230408&q=${newName}`
+      `https://api.weatherapi.com/v1/search.json?key=59b81daaa3614315b95183529230408&q=${newName}`
     );
     data = await myReqName.json();
   }
@@ -19,7 +19,7 @@ async function getData(text = "cairo") {
     newName = text;
   }
   let myReqDeg = await fetch(
-    `http://api.weatherapi.com/v1/forecast.json?key=59b81daaa3614315b95183529230408&q=${data[0].name}&days=7`
+    `https://api.weatherapi.com/v1/forecast.json?key=59b81daaa3614315b95183529230408&q=${data[0].name}&days=7`
   );
   let dataDg = await myReqDeg.json();
   display(dataDg);
